@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles-logical.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Epcc</title>
+    <meta property="og:title" content="Mi proyecto del curso esencial de HTML Y CSS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://estebanxz11.github.io/curso-esencia-html-css/" />
+    <meta property="og:image" content="https://estebanxz11.github.io/curso-esencia-html-css/images/dom.png" />
+    <meta property="og:description" 
+    content="Todo lo que necesitas saber en tu día a día como Frontend" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="hero"></div>
+
+    <div class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <header>
+            <nav>
+              <details open>
+                <summary>
+                  Conceptos basicos
+                </summary>
+                <ol>
+                  <li><a href="#google-chrome">¿Qué es la robotica?</a></li>
+                  <li><a href="#vsc">¿Qué es un robot?</a></li>
+                  <li><a href="#figma">¿Qué es un sensor?</a></li>
+                  <li><a href="#gitHub">¿Cuál es el cerebro en un robot?</a></li>
+                  <li><a href="#gitHub">¿Qué es un actuador?</a></li>
+                  <li><a href="#gitHub">¿Qué es programa en computación?</a></li>
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Introducción a Arduino
+                </summary>
+                <ol>
+                  <li><a href="#html">¿Qué es Arduino y para qué sirve?</a></li>
+                  <li><a href="#etiquetas">¿Qué es el IDE de Arduino?</a></li>
+                  <li><a href="#dom">Escritura de mensajes y anotaciones en el IDE de Arduino</a></li>
+                  <li><a href="#semantica">¿Qué es una función en Arduino?                  </a></li>
+                  <!-- <li><a href="#atributos">Atributos</a></li>
+                  <li><a href="#css">Qué es CSS</a></li> -->
+                </ol>
+              </details>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="wrapper">
+        <div class="main-content">
+          <h1>
+            Guia Docente Robotica
+          </h1>
+
+          <p>
+            Este es el incio de la guia para docentes en la cual aprenderas los conceptos basicos de robotica utilizando arduino
+           
+          </p>
+          <hr>
+          <section class="section-content">
+
+            <h2>
+              Conceptos Basicos
+            </h2>
+            <!-- <img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome"> -->
+            <h3 id="google-chrome">¿Qué es la robotica?</h3>
+            <p>
+              La robótica se encarga del diseño, construcción, estructura y aplicación de los robots. La
+              robótica es estudiada por ingenierías en electrónica, mecánica, mecatrónica, biomédica, entre
+              otras, así como por la inteligencia artificial y las ciencias de la computación.
+            </p>
+            <!-- <img src="images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code"> -->
+            <h3 id="vsc">¿Qué es un robot?</h3>
+            <p>Un robot es una entidad virtual o mecánica articial, usualmente es un sistema electromecánico que puede ser autónomo o controlado, el robot puede tener sensores que le permiten
+              adaptarse a nuevas situaciones y controlar su funcionamiento.
+              Existen varios tipos de robots, algunos pueden ser:</p>
+              <ul>
+                <li>Móviles</li>
+                <li>Poliarticulados</li>
+                <li>Androides</li>
+                <li>Zoomórficos</li>
+                <li>Híbridos</li>
+              </ul>
+              <p>Los elementos básicos en la estructura de un robot son:</p>
+              <ul>
+                <li>Sensores</li>
+                <li>Cerebro</li>
+                <li>Actuadores</li>
+              </ul>
+
+            <!-- <img src="images/figma.png" alt="Logo de Figma" title="Logo de Figma"> -->
+            <h3 id="figma">¿Qué es un sensor?</h3>
+            <p>Un sensor es un dispositivo electrónico capaz de registrar cambios de un fenómeno físico o
+              químico cuantificable generando una señal eléctrica de acuerdo al estímulo recibido.</p>
+            <!-- <img src="images/github.png" alt="Logo de GitHub" title="Logo de GitHub"> -->
+            <h3 id="gitHub">¿Cuál es el cerebro en un robot?</h3>
+            <p>El cerebro es donde se realizan todos los procesos y decisiones del robot que dependen de las
+              lecturas de los sensores y que realizan las acciones en los actuadores del robot. El cerebro consta
+              de un microcontrolador el cuál tiene las mismas características de un equipo de cómputo, es
+              decir, se puede programar y consta de una memoria en la que se puede almacenar información.</p>
+            <h3 id="gitHub">¿Qué es un actuador?</h3>
+            <p>Un actuador es un dispositivo electromecánico que convierte una señal eléctrica en una
+              acción física, por ejemplo un motor al recibir un voltaje realiza la acción de girar.</p>
+            <h3 id="gitHub">¿Qué es programa en computación?</h3>
+            <p>Un programa es una secuencia de instrucciones que en conjunto realizan una o varias acciones
+              o tareas. Las instrucciones del programa se escriben en un lenguaje de programación especíco
+              como lo son Java, Python, C, entre otros.</p>
+            <!-- <blockquote>
+              <p>
+                “Este es el inicio de tu carrera como Desarrollador Web”
+              </p>
+              <p>
+                <span>
+                  Juan Esteban
+                </span>
+              </p>
+
+            </blockquote> -->
+          </section>
+          <hr>
+          <section class="section-content">
+
+            <h2>Introducción a Arduino</h2>
+            <h3 id="html">¿Qué es Arduino y para qué sirve?</h3>
+            <p>Arduino es una placa para el desarrollo de proyectos. Todos los recursos de software y diseños
+              empleados por Arduino son abiertos, es decir, se pueden obtener de manera gratuita además
+              de poder modificarse sin ninguna restricción. </p>
+            <p>La placa Arduino debe de ser programada con las instrucciones que indiquen su funcionamiento. Para programar a la placa Arduino se puede emplear el IDE de Arduino además de
+              lenguajes de programación como Java, Python, Matlab, entre otros. Uno de los usos de la placa
+              Arduino es como el cerebro de un robot.</p>
+            <!-- <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre> -->
+            <h3 id="etiquetas">¿Qué es el IDE de Arduino?</h3>
+            <p>El IDE de Arduino es el entorno de desarrollo en el que se escribe el programa para
+              controlar la placa Arduino, es decir, en el IDE se dan las instrucciones de funcionamiento de la
+              placa Arduino.</p>
+            <p>El nombre IDE es una abreviación de Integrated Development Enviroment en inglés que se
+              traduce como entorno integrado de desarrollo. El IDE de Arduino es descargable de manera
+              gratuita en la página https://www.arduino.cc/.</p>
+            <h3 id="dom">Escritura de mensajes y anotaciones en el IDE de Arduino</h3>
+            <p>Para un mensajes de línea se escribe después de //, y para un mensaje de varias líneas se
+              escribe entre /* y */</p>
+            <img src="images/dom.png" alt="Estructura de arbol que representa al DOM" title="Estructura de arbol que representa al DOM">
+            <p>Los mensajes en general sirven para dejar indicaciones o referencias sobre el código escrito.</p>
+            
+            <h3 id="semantica">¿Qué es una función en Arduino?
+            </h3>
+            <p>Una función es un conjunto de instrucciones que dependiendo de su definición, pueden
+              devolver algún valor o requerir de algún valor al ejecutarse. Las funciones se definen para
+              simplificar el código en procesos que se repetirán en varias ocasiones en el programa. Los
+              cálculos realizados por una función se realizan de manera independiente al resto del programa.
+              Para definir una función en el IDE de Arduino, se debe de escribir el tipo de variable devuelta
+              por la función, el nombre de la función con los parámetros o argumentos que requiera la función
+              y el cuerpo de la función compuesta por el código de las instrucciones que realiza la función.</p>
+
+              <pre>
+tipoDevuelto nombreFunción(Argumento1, Argumento2, Argumento3, ...){
+
+//Cuerpo de la función nombreFunción()
+
+}
+  
+              </pre>
+              <p>Por ejemplo si se dene una función que realice la adición de dos números enteros deberá
+                de devolver el valor de la suma realizada el cual es un número entero, por lo que, el tipo de la
+                variable devuelta en este ejemplo es un número entero cuyo tipo es int (abreviatura de integer).</p>
+                <pre>
+int nombreFunción(Argumento1, Argumento2, Argumento3, ...){
+
+  //Cuerpo de la función nombreFuncion()
+
+}
+  
+                </pre>
+                <p>El nombre de una función debe de representar la actividad que realiza, por ejemplo en el
+                  caso de la función que devuelve la solución de la adición de dos números enteros el nombre
+                  puede ser suma</p>
+<pre>
+int suma(Argumento1, Argumento2, Argumento3, ...){
+  
+//Cuerpo de la función suma()
+  
+}
+  
+</pre>
+
+                  <p>
+                    Los argumentos o parámetros de una función son los valores requeridos por la función para
+                    poder ejecutarse, en el caso de la función suma(), sus argumentos deben de ser los números
+                    que van a sumarse, que para esta función estos números son enteros, es decir, de tipo int.
+
+                  </p>
+<pre>
+int suma(int i, int j){
+
+//Cuerpo de la función suma()
+    
+}
+</pre>
+
+                  <p>En el cuerpo de la función se escribe el código que realice la actividad, este código se escribe
+                    siempre dentro de las llaves {} que continúan al paréntesis de argumentos de la función. En el
+                    caso de la función suma() el código debe de realizar la suma y devolver la solución.</p>
+<pre>
+int suma(int i, int j){
+    
+  int resultado = i + j;
+    
+  return resultado;
+
+}
+</pre>
+                  <p>
+                    En el IDE de Arduino existen varias funciones predenidas que se emplean para realizar
+                    funciones básicas de la placa como lo son la escritura y lectura.
+                    Para ejecutar una función, es necesario invocar la función escribiendo el nombre de la función
+                    como sentencia en el código del programa donde se desea ejecutar, incluyendo los argumentos
+                    necesarios para que pueda ejecutarse.
+                  </p>
+
+
+
+            <!-- <h3 id="atributos">Atributos</h3>
+            <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
+            navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
+            funcionan en solo alguna etiquetas como src</p>
+            <h3 id="css">CSS</h3>
+            <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
+            la presentación de documentos HTML</p>
+            <img src="images/css.png" alt="CSS" title="CSS"> -->
+          </section>
+
+          <!-- <section class="section-content">
+
+            <h2>Modelo de caja</h2>
+            <h3>El modelo de caja está compuesto por:</h3>
+            <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de
+            desarrollo avanzadas y de amigable uso.</p>
+            <ol>
+              <li>
+                Tamaño del del contenido / ancho y alto
+              </li>
+              <li>Padding / Relleno</li>
+              <li>Border / Bordes</li>
+              <li>Margin / Márgenes</li>
+            </ol>
+            <h3>Propiedades físicas para el modelo de caja:</h3>
+            <ul>
+              <li>width / height</li>
+              <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
+              <li>border / border-top | border-right | border-bottom | border-left</li>
+              <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
+            </ul>
+            <h3>Propiedades lógicas para el modelo de caja:</h3>
+            <ul>
+              <li>inline-size / block-size</li>
+              <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
+              <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
+              <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+            </ul>
+          </section> -->
+          <!-- <div class="section-content">
+            <h2>Hola estos son unos videos </h2>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1" > 
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8VJiyCmdhYk" title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8VJiyCmdhYk" title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8VJiyCmdhYk" title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1" class="slider-bullet"></a>
+                <a href="#video-2" class="slider-bullet"></a>
+                <a href="#video-3" class="slider-bullet"></a>
+              </div>
+            </div>
+          </div> -->
+          
+          <!-- <p>
+            Si tienes alguna pregunta escríbeme a me@leonidasesteban.com
+            <a href="milto:me@leonidasesteban.com">bibliografía</a>
+          </p> -->
+          <div class="section-content">
+            <h2>Ingresa a nuestro newsletter</h2>
+            <form action="#" class="form">
+              <input type="text" placeholder="Nombre" required>
+              <input type="email" placeholder="Correo Electrónico" required>
+              <input type="submit" value="Suscribirme">
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
