@@ -70,6 +70,64 @@
                   <li><a href="#css">Qué es CSS</a></li> -->
                 </ol>
               </details>
+              <details open>
+                <summary>
+                  Variables
+                </summary>
+                <ol>
+                  <li><a href="#html">Tipos de variables</a></li>
+               
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Operadores
+                </summary>
+                <ol>
+                  <li><a href="#html">Tipos de variables</a></li>
+               
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Estructurs de control
+                </summary>
+                <ol>
+                  <li><a href="#html">Tipos de variables</a></li>
+               
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Entradas y salidas
+                </summary>
+                <ol>
+                  <li><a href="#html">Tipos de variables</a></li>
+               
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Puerto serial y mas
+                </summary>
+                <ol>
+                  <li><a href="#html">Tipos de variables</a></li>
+               
+                </ol>
+              </details>
+              <details open>
+                <summary>
+                  Prototipo robot
+                </summary>
+                <ol>
+                  <li><a href="#html">Prototipo robot</a></li>
+                  <li><a href="#etiquetas">Funcionalidades del robot</a></li>
+                  <li><a href="#dom">Funcionalidad 1</a></li>
+                  <li><a href="#semantica">Funcionalida 2 </a></li>
+                  <!-- <li><a href="#atributos">Atributos</a></li>
+                  <li><a href="#css">Qué es CSS</a></li> -->
+                </ol>
+              </details>
             </nav>
           </header>
         </div>
@@ -97,13 +155,12 @@
             <h3 id="google-chrome">¿Qué es la robotica?</h3>
             <img src="images/robot1.png" width="500px" alt="">
             <p>
-              La robótica se encarga del diseño, construcción, estructura y aplicación de los robots. La
-              robótica es estudiada por ingenierías en electrónica, mecánica, mecatrónica, biomédica, entre
-              otras, así como por la inteligencia artificial y las ciencias de la computación.
+              
+              La robótica se ocupa del diseño, construcción, estructura y aplicación de robots. La robótica se estudia a través de ingenierías como electrónica, mecánica, mecatrónica, biomedicina e inteligencia artificial e informática.
             </p>
             <!-- <img src="images/visual-studio-code.png" alt="Logo de Visual Studio Code" title="Logo de Visual Studio Code"> -->
             <h3 id="vsc">¿Qué es un robot?</h3>
-            <p>Un robot es una entidad virtual o mecánica articial, usualmente es un sistema electromecánico que puede ser autónomo o controlado, el robot puede tener sensores que le permiten
+            <p>Un robot es una entidad virtual o mecánica artificial, generalmente es un sistema electromecánico que puede ser autónomo o controlado, el robot puede tener sensores que le permiten
               adaptarse a nuevas situaciones y controlar su funcionamiento.
               Existen varios tipos de robots, algunos pueden ser:</p>
               <ul>
@@ -136,19 +193,9 @@
               acción física, por ejemplo un motor al recibir un voltaje realiza la acción de girar.</p>
             <h3 id="gitHub">¿Qué es programa en computación?</h3>
             <p>Un programa es una secuencia de instrucciones que en conjunto realizan una o varias acciones
-              o tareas. Las instrucciones del programa se escriben en un lenguaje de programación especíco
-              como lo son Java, Python, C, entre otros.</p>
-            <!-- <blockquote>
-              <p>
-                “Este es el inicio de tu carrera como Desarrollador Web”
-              </p>
-              <p>
-                <span>
-                  Juan Esteban
-                </span>
-              </p>
-
-            </blockquote> -->
+              o tareas. Las instrucciones del programa se escriben en un lenguaje de programación específico
+              como lo son JavaScript, Java, Python, C, entre otros.</p>
+         
           </section>
           <hr>
           <section class="section-content">
@@ -162,20 +209,7 @@
             <p>La placa Arduino debe de ser programada con las instrucciones que indiquen su funcionamiento. Para programar a la placa Arduino se puede emplear el IDE de Arduino además de
               lenguajes de programación como Java, Python, Matlab, entre otros. Uno de los usos de la placa
               Arduino es como el cerebro de un robot.</p>
-            <!-- <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
 
-&lt;/body&gt;
-&lt;/html&gt;
-            </pre> -->
             <h3 id="etiquetas">¿Qué es el IDE de Arduino?</h3>
             <p>El IDE de Arduino es el entorno de desarrollo en el que se escribe el programa para
               controlar la placa Arduino, es decir, en el IDE se dan las instrucciones de funcionamiento de la
@@ -186,7 +220,13 @@
             <h3 id="dom">Escritura de mensajes y anotaciones en el IDE de Arduino</h3>
             <p>Para un mensajes de línea se escribe después de //, y para un mensaje de varias líneas se
               escribe entre /* y */</p>
-            <img src="images/dom.png" alt="Estructura de arbol que representa al DOM" title="Estructura de arbol que representa al DOM">
+              <pre>
+// Este es un comentario 
+
+/* Este es un
+comentario en 
+bloque */           
+              </pre>
             <p>Los mensajes en general sirven para dejar indicaciones o referencias sobre el código escrito.</p>
             
             <h3 id="semantica">¿Qué es una función en Arduino?
@@ -207,7 +247,7 @@ tipoDevuelto nombreFunción(Argumento1, Argumento2, Argumento3, ...){
 }
   
               </pre>
-              <p>Por ejemplo si se dene una función que realice la adición de dos números enteros deberá
+              <p>Por ejemplo si se define una función que realice la adición de dos números enteros deberá
                 de devolver el valor de la suma realizada el cual es un número entero, por lo que, el tipo de la
                 variable devuelta en este ejemplo es un número entero cuyo tipo es int (abreviatura de integer).</p>
                 <pre>
@@ -257,7 +297,7 @@ int suma(int i, int j){
 }
 </pre>
                   <p>
-                    En el IDE de Arduino existen varias funciones predenidas que se emplean para realizar
+                    En el IDE de Arduino existen varias funciones predefinidas que se emplean para realizar
                     funciones básicas de la placa como lo son la escritura y lectura.
                     Para ejecutar una función, es necesario invocar la función escribiendo el nombre de la función
                     como sentencia en el código del programa donde se desea ejecutar, incluyendo los argumentos
@@ -278,35 +318,87 @@ int suma(int i, int j){
             <!-- <iframe width="725" height="453" src="https://www.tinkercad.com/embed/5HIsh70f7n2" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> -->
           </section>
 
-          <!-- <section class="section-content">
+          <section class="section-content">
 
-            <h2>Modelo de caja</h2>
-            <h3>El modelo de caja está compuesto por:</h3>
-            <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de
-            desarrollo avanzadas y de amigable uso.</p>
-            <ol>
-              <li>
-                Tamaño del del contenido / ancho y alto
-              </li>
-              <li>Padding / Relleno</li>
-              <li>Border / Bordes</li>
-              <li>Margin / Márgenes</li>
-            </ol>
-            <h3>Propiedades físicas para el modelo de caja:</h3>
-            <ul>
-              <li>width / height</li>
-              <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
-              <li>border / border-top | border-right | border-bottom | border-left</li>
-              <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
-            </ul>
-            <h3>Propiedades lógicas para el modelo de caja:</h3>
-            <ul>
-              <li>inline-size / block-size</li>
-              <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-              <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-              <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
-            </ul>
-          </section> -->
+            <h2>Prototipo del robot</h2>
+            <img src="./images/robot-prototipo.png" alt="">
+            <h3>Sensor UltraSonido</h3>
+            <p>
+              Un sensor de ultrasonido es un dispositivo que es capaz de calcular la distancia a la que se encuentra un objeto utilizando ondas de alta frecuencia. La señal es inaudible para el ser humano. Este tipo de sensores constan de dos partes fundamentales. Nos referirnos a los dos cilindros del dispositivo. Uno de ellos es el emisor que emite la señal y el otro el receptor que recibe la señal en el caso de que rebote sobre algún obstáculo cercano hacia el sensor. Sabiendo cuanto ha tardado en viajar dicha onda, podemos saber la distancia (Moreno Muñoz A. y. pp. 166 2018,). 
+            </p>
+            <h4>ESQUEMA MONTAJE</h4>
+            <img src="./images/ultrasonido.png" alt="">
+            <h4>EJEMPLO DE CÓDIGO</h4>
+            <pre>
+const int Trigger = 12;   //Pin digital 2 para el Trigger del sensor
+const int Echo = 11;   //Pin digital 3 para el echo del sensor
+const int Led = 13;
+void setup() {
+  Serial.begin(9600);//iniciailzamos la comunicación
+  pinMode(Led, OUTPUT);//pin como salida
+  pinMode(Trigger, OUTPUT); //pin como salida
+  pinMode(Echo, INPUT);  //pin como entrada
+   digitalWrite(Trigger, LOW);//Inicializamos el pin con 0
+}
+              
+void loop() {
+  long t; //tiempo que demora en llegar al eco
+  long d; //distancia en centimetros
+                
+  digitalWrite(Trigger, HIGH); //Mandamos un pulso al Trigger
+  delayMicroseconds(10); //Espera 
+  digitalWrite(Trigger, LOW);
+                
+  t= pulseIn(Echo, HIGH); //encontramos el ancho del pulso
+  d=t/59;           //hacemos la relacion de la distamcia en cm segun el tiempo
+                
+                
+  if(d<50){           //si la distancia es menor a 10cm
+    digitalWrite(Led, HIGH);  //Enciende el led
+  } else{           //sino
+    digitalWrite(Led, LOW);   //Apaga el led
+  }
+                
+  Serial.print("Distancia: ");
+  Serial.print(d);
+   erial.print("cm");
+  Serial.println();
+  delay(100);
+  }
+                
+              </pre>
+              <h3>Buzzer</h3>
+              <p>
+                Buzzer Activo 5v es un transductor electroacústico, es decir, un dispositivo que convierte la señal eléctrica en acústica. Su construcción consta de una bobina y un electroimán.
+              </p>
+              <h4>ESQUEMA MONTAJE</h4>
+              <img src="./images/buzzer.png" alt="">
+              <h4>EJEMPLO DE CÓDIGO</h4>
+              <pre>
+                const int pinBuzzer = 10;
+
+                void setup() 
+                {
+                }
+                
+                void loop() 
+                {
+                  //generar tono de 440Hz durante 1000 ms
+                  tone(pinBuzzer, 440);
+                  delay(1000);
+                
+                  //detener tono durante 500ms  
+                  noTone(pinBuzzer);
+                  delay(500);
+                
+                  //generar tono de 523Hz durante 500ms, y detenerlo durante 500ms.
+                  tone(pinBuzzer, 523, 300);
+                  delay(500);
+                }
+                  
+                </pre>
+
+          </section>
           <!-- <div class="section-content">
             <h2>Hola estos son unos videos </h2>
             <div class="slider">
@@ -341,14 +433,14 @@ int suma(int i, int j){
             Si tienes alguna pregunta escríbeme a me@leonidasesteban.com
             <a href="milto:me@leonidasesteban.com">bibliografía</a>
           </p> -->
-          <div class="section-content">
+          <!-- <div class="section-content">
             <h2>Ingresa a nuestro newsletter</h2>
             <form action="#" class="form">
               <input type="text" placeholder="Nombre" required>
               <input type="email" placeholder="Correo Electrónico" required>
               <input type="submit" value="Suscribirme">
             </form>
-          </div>
+          </div> -->
 
 
         </div>
