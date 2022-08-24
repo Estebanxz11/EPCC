@@ -95,11 +95,11 @@
               </details>
               <details >
                 <summary>
-                  Estructurs de control
+                  Estructura de control
                 </summary>
                 <ol>
-                  <li><a href="#html">Condicionales</a></li>
-                  <li><a href="#html">Bucles</a></li>
+                  <li><a href="#condicionales">Condicionales</a></li>
+                  <li><a href="#bucles">Bucles</a></li>
                
                 </ol>
               </details>
@@ -108,8 +108,9 @@
                   Entradas y salidas
                 </summary>
                 <ol>
-                  <li><a href="#html"></a></li>
-               
+                  <li><a href="#pines">Pines</a></li>
+                  <li><a href="#pines">pinModeI</a></li>
+                  <li><a href="#pines">pinModeO</a></li>
                 </ol>
               </details>
               <details >
@@ -471,31 +472,31 @@ void setup(){
 
 void loop() {
 }
-</pre>
-          </section>
-          <hr> 
+  </pre>
+            </section>
+            <hr> 
 
-          <section class="section-content">
-            <h2>Operadores</h2>
-            <h3 id="aritmeticos">Operadores aritmeticos</h3>
-            <p>
-              Los operadores aritméticos son las operaciones básicas que se pueden realizar con los números. 
-              Se define entonces la suma, resta, producto, división y asignación.
-            </p>
-            <h3 id="compuestas">Asignaciones compuestas</h3>
-            <p>
-              La operación de asignación se realiza con el signo de = y se hace cuando se asigna un valora una variable.
-            </p>
-<pre>
-//SE DECLARA LA VARIABLE ENTERA numero
-int numero = 10; 
+            <section class="section-content">
+              <h2>Operadores</h2>
+              <h3 id="aritmeticos">Operadores aritmeticos</h3>
+              <p>
+                Los operadores aritméticos son las operaciones básicas que se pueden realizar con los números. 
+                Se define entonces la suma, resta, producto, división y asignación.
+              </p>
+              <h3 id="compuestas">Asignaciones compuestas</h3>
+              <p>
+                La operación de asignación se realiza con el signo de = y se hace cuando se asigna un valora una variable.
+              </p>
+      <pre>
+      //SE DECLARA LA VARIABLE ENTERA numero
+      int numero = 10; 
 
-//Y SE LE ASIGNA EL VALOR DE 10 EMPLEANDO EL OPERADOR =
-</pre>
-            <p>
-              También es posible modificar el valor asignado a la variable.
-            </p>
-<pre>
+      //Y SE LE ASIGNA EL VALOR DE 10 EMPLEANDO EL OPERADOR =
+      </pre>
+              <p>
+                También es posible modificar el valor asignado a la variable.
+              </p>
+  <pre>
 //SE DECLARA LA VARIABLE ENTERA numero
 int numero = 10; 
 
@@ -670,6 +671,177 @@ boolean valor = x < 3;
             </table>
 
           </section>
+          <div class="section-content">
+            <h2>
+              Estructura de control
+            </h2>
+            <img src="images/condicional.png" width="500px" alt="">
+            <br>
+            <h3 id="condicionales">Condicionales</h3>
+            <p>En Arduino encontrarás las siguientes sentencias condicionales: </p>
+            <h4>if</h4>
+            <p>Deberás utilizar esta herramienta cuando quieras conocer si una variable alcanzó una determinada condición.</p>
+            <h5>Su sintaxis es: </h5>
+<pre>
+if (condition) { // Siendo condition una expresión de TRUE o FALSE.
+
+  //statement(s)
+
+}
+</pre>
+            <h5>Por ejemplo: </h5>
+            <pre>
+if (x > 120) digitalWrite(LEDpin, HIGH);
+
+if (x > 120)
+
+digitalWrite(LEDpin, HIGH);
+
+if (x > 120) {digitalWrite(LEDpin, HIGH);}
+
+if (x > 120) {
+
+digitalWrite(LEDpin1, HIGH);
+
+digitalWrite(LEDpin2, HIGH);
+
+}
+
+// todo está correcto
+              </pre>
+            <h4>Else</h4>
+            <p>Con esta herramienta de estructura de control se pueden elegir varias condiciones que sean excluyentes entre sí cuando se produce una situación determinada.</p>
+            <h5>Se tiene que usar con la siguiente estructura:</h5>
+            <pre>
+if (condition1) {
+
+  // do Thing A
+  
+  }
+  
+  else if (condition2) {
+  
+  // do Thing B
+  
+  }
+  
+  else {
+  
+  // do Thing C
+  
+  }
+            </pre>
+            <h4>switch - case</h4>
+            <p>Es posible utilizar esta estructura cuando se necesita que el programa decida sobre una instrucción precisa cuando existe la posibilidad de comparar el valor de la variable en relación con valores establecidos de antemano.</p>
+            <h5>Su sintaxis se establece de la siguiente manera: </h5>
+            <pre>
+switch (var) {
+
+  case label1:
+  
+  // statements
+  
+  break;
+  
+  case label2:
+  
+  // statements
+  
+  break;
+  
+  default:
+  
+  // statements
+  
+  break;
+  
+  }             
+            </pre>
+            <h3 id="bucles">Bucles</h3>
+            <p>Estas estructuras de bucles son herramientas que permiten ejecutar las instrucciones que tiene el programa de manera repetida</p>
+            <p>Una señal analógica es una señal continua generada por un fenómeno natural, como la música, el voltaje o corriente que circula por un cable, los temblores de un terremoto o la luz.</p>
+            <h4>for</h4>
+            <p>Podrás repetir las secuencias de los códigos que se encuentren entre llaves las veces que indiques en el IDE de Arduino. Para ello, se analizará que se cumplan las condiciones para que se vuelvan a ejecutar esta serie de estructuras de control.</p>
+            <h5>Se desarrolla siguiendo estos parámetros:</h5>
+            <pre>
+for (initialization; condition; increment) {
+
+  // statement(s);
+  
+}
+            </pre>
+            <h4>while</h4>
+            <p>Con esta herramienta podrás ejecutar el bucle de forma continua y todas las veces que sea necesario, siempre que se cumpla con la condición establecida al comienzo de bucle entre paréntesis. Si arroja un valor falso se sale de la expresión y termina la acción.</p>
+            <h5>Su estructura es:</h5>
+            <pre>
+while (condition) { // la condición debe ser TRUE o FALSE
+
+// statement(s)
+
+}
+            </pre>
+            <img src="images/serial.png" alt="">
+            <h3>pinMode (pin, OUTPUT)</h3>
+            <p>Los pines de salida se encuentran en un estado de baja impedancia (valor bajo de resistencia), es decir, que puede proporcionar una mayor intensidad a otros circuitos. Los pines pueden proporcionar (corriente positiva) o recibir (corriente negativa)  40 mA, por lo que hay que tener cuidado de no quemar la placa. Esta corriente no es suficiente para mover algunos motores , relés u otros dispositivos.</p>
+          </div>
+          <hr>
+          <div class="section-content">
+            <h2>
+              Entradas y salidas
+            </h2>
+            <img src="images/pines.png" width="500px" alt="">
+            <br>
+            <h3 id="pines">Pines</h3>
+            <p>La placa Arduino posee un conjunto de pines que pueden usarse de distintas maneras y con configuraciones distintas de entrada / salida.</p>
+            <h3 id="pinModeI">Función pinMode (pin, INPUT)</h3>
+            <p>Cada pin está declarado por defecto como un pin de entrada, por lo que no sería necesario ejecutar la instrucción pinMode(). Cuando un pin está declarado como pin de entrada se asocia a un estado de alta impedancia. Esto significa que existe una resistencia con un valor muy alto (100MΩ), de manera que es necesaria la circulación de una corriente muy pequeña para cambiar el estado del pin. Esto también puede provocar errores por ruido eléctrico cuando el pin no esta conectado a nada o hay un cable suelto.</p>
+            <p>Una señal analógica es una señal continua generada por un fenómeno natural, como la música, el voltaje o corriente que circula por un cable, los temblores de un terremoto o la luz.</p>
+            <pre>
+void setup() {
+  Serial.begin(9600);
+  pinMode(A0, INPUT);
+}
+
+Void loop() {
+  Serial.print("Analog Read: ");
+  Serial.println(analogRead(A0));
+}
+            </pre>
+            <p>Si lo visualizamos convenientemente desde el Serial Plotter, podremos observar una gráfica que dibujará la intensidad de la luz capturada por el sensor. Consejo: Leer el post para usar correctamente el Serial Plotter.</p>
+            <img src="images/serial.png" alt="">
+            <h3>pinMode (pin, OUTPUT)</h3>
+            <p>Los pines de salida se encuentran en un estado de baja impedancia (valor bajo de resistencia), es decir, que puede proporcionar una mayor intensidad a otros circuitos. Los pines pueden proporcionar (corriente positiva) o recibir (corriente negativa)  40 mA, por lo que hay que tener cuidado de no quemar la placa. Esta corriente no es suficiente para mover algunos motores , relés u otros dispositivos.</p>
+
+            <p>En el siguiente ejercicio, vamos a realizar una conexión de un LED y utilizaremos la función analogWrite()</p>
+
+            <img src="images/imagen-prender-un-led.png" width="50%" alt="">
+<pre>
+int time;
+
+void setup() {
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+
+  time = (int)(50);
+
+}
+
+void loop() {
+  digitalWrite(4, HIGH);
+  for (int i = 0; i <= 255; i++) { 
+    analogWrite(3, i); 
+    delay(time); 
+  } 
+  for ( int i = 255; i >= 0; i--) {
+    analogWrite(3, i);
+    delay(time);
+  }
+  digitalWrite(4, LOW);
+
+}
+</pre>
+          </div>
+          
           <hr>
           <div class="section-content">
             <h2>
