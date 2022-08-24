@@ -323,7 +323,327 @@ int suma(int i, int j){
             <iframe width="725" height="453" src="https://www.tinkercad.com/embed/5HIsh70f7n2?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
             <!-- <iframe width="725" height="453" src="https://www.tinkercad.com/embed/5HIsh70f7n2" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> -->
           </section>
+          <hr>
+          <section class="section-content">
+            <h2>Variables</h2>
+            <h3 id="html">Tipos de variables</h3>
+            <p>
+              En la programación en el IDE de Arduino se tienen los siguientes tipos de variables: 
+            </p>
+            <ul>
+              <li>int (enteros)</li>
+              <li>float (decimales)</li>
+              <li>char (caracteres)</li>
+              <li>boolean (booleana)</li>
+            </ul>
+            <p>
+              Para trabajar con números enteros se emplea int (entero), para trabajar con números decimales se emplea float (decimales), 
+              para trabajar con letras o símbolos se emplea char (caracteres) y para trabajar con valores de verdadero o falso se emplea boolean.
+              Por ejemplo se declaran los varios tipos de variables en tres distintos lugares: fuera de las
+              funciones setup() y loop(), dentro del cuerpo de la función setup() y dentro del cuerpo de
+              la función loop().
+            </p>
 
+            <h3 id="html">Uso de variables y constantes</h3>
+<pre>
+//EJEMPLO 1
+int variable_01 = -7; //Número entero
+float variable_02 = 8.2; //Número decimal
+char variable_03 = 'A'; //Letra
+boolean variable_04 = true; //Verdadero
+
+void setup(){
+}
+
+void loop() {
+}
+</pre>
+
+<pre>
+  //EJEMPLO 2
+  
+  void setup(){
+    int variable_01 = -7; //Número entero
+    float variable_02 = 8.2; //Número decimal
+    char variable_03 = 'A'; //Letra
+    boolean variable_04 = true; //Verdadero
+  }
+  
+  void loop() {
+  }
+</pre>
+
+<pre>
+  //EJEMPLO 3
+  
+  void setup(){
+  }
+  
+  void loop() {
+    int variable_01 = -7; //Número entero
+    float variable_02 = 8.2; //Número decimal
+    char variable_03 = 'A'; //Letra
+    boolean variable_04 = true; //Verdadero
+  
+  }
+</pre>
+            <p>
+              El alcance o visibilidad de una variable define hasta que parte del código la variable puede ser empleada, 
+              es decir, hasta que parte del código la variable existe y está definida de manera que cualquier cambio en la 
+              variable será el mismo en las partes donde la variable sea visible o tenga alcance.
+            </p>
+
+            <p>
+            Para declarar una variable en el IDE de Arduino se hace escribiendo el tipo de variable seguido del nombre de la variable 
+            igualada de manera opcional a un valor inicial. Cualquier declaración de una variable deberá de terminar en punto y coma. 
+            Una variable global es aquella variable que es visible por todas las partes del código. En el IDE de Arduino esto se hace 
+            definiendo las variables fuera de setup() y de loop(), de esta forma la variable es visible en cualquier parte del código. 
+            En la imagen del ejemplo 1 las variables declaradas son globales.
+            </p>
+
+            <p>
+              Una variable local es aquella variable que es visible únicamente donde está definida. En el IDE de Arduino esto se hace definiendo 
+              variables dentro de llaves, de esta forma la variable es visible únicamente dentro de las llaves donde está definida la variable. 
+              En el caso de declarar variables dentro del cuerpo de setup() solo podrán ser vistas dentro del cuerpo de setup() , es decir son 
+              locales dentro de la función setup() (véase en el ejemplo 2). En el caso de declarar las variables dentro del cuerpo de loop() 
+              solo podrán ser vistas dentro del cuerpo de loop(), es decir son locales dentro de la función loop() (véase en el ejemplo 3)
+            </p>
+
+            <h4>CONSTANTES</h4>
+            <p>
+              Las variables que se deseen declarar como constantes son aquellas que su valor no cambie en ninguna parte del código y durante 
+              la ejecución del programa. Por lo común las constantes se declaran de manera global, es decir, al principio y fuera de las funciones 
+              setup() y loop/(). Para declarar como constante a una variable, se hace colocando el prefijo const.
+            </p>
+            <p>
+              Existe otra manera a través de #define seguido del nombre y el valor, en este caso la declaración no termina en punto y coma.
+            </p>
+<pre>
+//EJEMPLO CONSTANTES
+const int ladosCuadrado = 4 //Número entero
+const float pi = 3.14; //Número decimal
+const char primeraVocal = 'A'; //Letra
+const boolean falso = false //verdadero
+
+void setup(){
+}
+
+void loop() {
+}
+</pre>
+
+<pre>
+//EJEMPLO CONSTANTES EMPLEANDO EL #define
+#define int ladosCuadrado = 4 //Número entero
+#define float pi = 3.14; //Número decimal
+#define char primeraVocal = 'A'; //Letra
+#define boolean falso = false //verdadero
+
+void setup(){
+}
+
+void loop() {
+}
+</pre>
+          </section>
+          <hr> 
+
+          <section class="section-content">
+            <h2>Operadores</h2>
+            <h3 id="html">Operadores aritmeticos</h3>
+            <p>
+              Los operadores aritméticos son las operaciones básicas que se pueden realizar con los números. 
+              Se define entonces la suma, resta, producto, división y asignación.
+            </p>
+            <h3 id="html">Asignaciones compuestas</h3>
+            <p>
+              La operación de asignación se realiza con el signo de = y se hace cuando se asigna un valora una variable.
+            </p>
+<pre>
+//SE DECLARA LA VARIABLE ENTERA numero
+int numero = 10; 
+
+//Y SE LE ASIGNA EL VALOR DE 10 EMPLEANDO EL OPERADOR =
+</pre>
+            <p>
+              También es posible modificar el valor asignado a la variable.
+            </p>
+<pre>
+//SE DECLARA LA VARIABLE ENTERA numero
+int numero = 10; 
+
+//Y SE LE ASIGNA EL VALOR DE 10 EMPLEANDO EL OPERADOR =
+
+numero = -12; 
+//SE ASIGNA EL VALOR DE -12 A LA VARIABLE numero
+//EMPLEANDO EL OPERADOR =
+</pre>
+            <p>
+              Es posible modificar un valor de una variable empleando a la misma variable, es decir, asignarle un valor 
+              nuevo a la variable empleando su valor anterior a la modificación. Por ejemplo, si se modifica el valor de 
+              la variable número a un nuevo valor igual a el valor que tenía la variable antes de la modificación número 
+              más cinco unidades.
+            </p>
+<pre>
+//SE DECLARA LA VARIABLE NUMERO LA CUAL SUMARA 5 AL NUMERO
+numero = numero + 5;
+</pre>
+            <p>
+              Otros ejemplos de operadores son:
+            </p>
+<pre>
+//SUMA 5 A x Y GUARDA EL VALOR OBTENIDO EN x
+x = x + 5; 
+
+//RESTA 6 A z Y GUARDA EL RESULTADO EN z
+z = z - 6; 
+
+//MULTIPLICA LOS VALORES DE a Por b por c
+//y asigna el resultado en la variable Volumen
+Volumen = a*b*c;
+
+//DIVIDE ENTRE 4 AL VALOR DE q y guarda el resultado en q
+q = q/4; 
+
+//SE ASIGNA EL VALOR DE 2 a la variable r
+r = 2; 
+</pre>
+            <p>
+              Existen otros operadores que se utilizan si se desea abreviar las operaciones anteriores.
+            </p>
+<pre>
+//EQUIVALENTE A x = x+2;
+x += 2; 
+
+//EQUIVALENTE A y = y - 3;
+y -= 3; 
+
+//EQUIVALENTE A z = z * 7;
+z *= 7; 
+
+//EQUIVALENTE A w = w/4;
+w /= 4; 
+</pre>
+            <p>
+              Además de los operador incremento y decremento.
+            </p>
+<pre>
+//EQUIVALENTE A x = x + 1; INCREMENTA EL VALOR DE x EN UNO
+x++; 
+
+//EQUIVALENTE A x = x - 1; DECREMENTA EL VALOR DE x EN UNO
+x--;
+</pre>
+
+            <h3 id="html">Operadores de comparación</h3>
+
+            <p>
+              Al comparar valores se establece una condición que puede ser verdadera o falsa. Para establecer 
+              una condición se emplean los operadores de comparación. si x = 2, entonces
+            </p>
+
+<pre>
+//ES VERDADERO, ¿x ES MENOR QUE 3?
+x < 3; 
+
+//ES FALSO, ¿x ES MAYOR QUE 3
+x > 3; 
+
+//ES VERDADERO, ¿x ES MENOR O IGUAL 2?
+x<=2; 
+
+//ES VERDADERO, ¿x es MAYOR O IGUAL a 2?
+x>=2; 
+
+//ES VERDADERO, ¿x ES IGUAL A 2?
+x==2; 
+
+//ES FALSO, ¿x NO ES IGUAL 2?
+x!=2; 
+
+</pre>
+
+            <p>
+              El resultado de hacer una comparación es verdadero o falso, por lo que su resultado puede ser almacenado en una variable booleana.
+            </p>
+
+<pre>
+boolean valor = x < 3;
+</pre>
+            <h3 id="html">Operadores lógicos</h3>
+
+            <p>Para comparar varias condiciones se emplean los operadores lógicos. Los operadores lógicos son el 
+              “o” y el “y” cuyos símbolos son respectivamente || y &&, estos operadores cumplen con las tablas de verdad.
+            </p> 
+
+            <table class="">
+
+              <tr>
+                <th>Condición</th>
+                <th>Operador</th>
+                <th>Condición</th>
+                <th>Resultado</th>
+              </tr>
+            
+              <tr>
+                <td>VERDADERO</td>
+                <td>&&</td>
+                <td>VERDADERO</td>
+                <td>VERDADERO</td>
+              </tr>
+            
+              <tr>
+                <td>VERDADERO</td>
+                <td>&&</td>
+                <td>FALSO</td>
+                <td>FALSO</td>
+              </tr>
+            
+              <tr>
+                <td>FALSO</td>
+                <td>&&</td>
+                <td>VERDADERO</td>
+                <td>FALSO</td>
+              </tr>
+
+              <tr>
+                <td>FALSO</td>
+                <td>&&</td>
+                <td>FALSO</td>
+                <td>FALSO</td>
+              </tr>
+
+              <tr>
+                <td>VERDADERO</td>
+                <td>||</td>
+                <td>VERDADERO</td>
+                <td>VERDADERO</td>
+              </tr>
+
+              <tr>
+                <td>VERDADERO</td>
+                <td>||</td>
+                <td>FALSO</td>
+                <td>FALSO</td>
+              </tr>
+
+              <tr>
+                <td>FALSO</td>
+                <td>||</td>
+                <td>VERDADERO</td>
+                <td>FALSO</td>
+              </tr>
+
+              <tr>
+                <td>FALSO</td>
+                <td>||</td>
+                <td>FALSO</td>
+                <td>FALSO</td>
+              </tr>
+            </table>
+
+          </section>
+          <hr>
           <section class="section-content">
 
             <h2>Prototipo del robot</h2>
