@@ -44,12 +44,12 @@
         <div class="header-content">
           <header>
             <nav>
-              <details open>
+              <details>
                 <summary>
-                  Conceptos basicos
+                  Conceptos básicos
                 </summary>
                 <ol>
-                  <li><a href="#robotica">¿Qué es la robotica?</a></li>
+                  <li><a href="#robotica">¿Qué es la robótica?</a></li>
                   <li><a href="#robot">¿Qué es un robot?</a></li>
                   <li><a href="#sensor">¿Qué es un sensor?</a></li>
                   <li><a href="#cerebro">¿Cuál es el cerebro en un robot?</a></li>
@@ -59,7 +59,7 @@
               </details>
               <details >
                 <summary>
-                  Introducción a Arduino
+                  Introducción Arduino
                 </summary>
                 <ol>
                   <li><a href="#arduino">¿Qué es Arduino y para qué sirve?</a></li>
@@ -125,10 +125,14 @@
               </details>
               <details >
                 <summary>
-                   Subir codigo al robot EPCC
+                  Como subir código al robot EPCC
                 </summary>
                 <ol>
-                  <li><a href="#codigo">Como Subir codigo al robot EPCC</a></li>
+                  <li><a href="#codigo"> Paso 1</a></li>
+                  <li><a href="#paso2"> Paso 2</a></li>
+                  <li><a href="#paso3"> Paso 2</a></li>
+                  <li><a href="#paso4"> Paso 2</a></li>
+                  <li><a href="#paso5"> Paso 5</a></li>
                   
                 </ol>
                 
@@ -172,21 +176,21 @@
       <div class="wrapper">
         <div class="main-content">
           <h1>
-            Guia Docente Robotica
+            Guía Docente Robótica
           </h1>
 
           <p>
-            Este es el incio de la guia para docentes en la cual aprenderas los conceptos basicos de robotica utilizando arduino
+            Este es el inicio de la guía para docentes en la cual aprenderás los conceptos básicos de robótica utilizando Arduino.
            
           </p>
           <hr>
           <section class="section-content">
 
             <h2>
-              Conceptos Basicos
+              Conceptos básicos
             </h2>
             <!-- <img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome"> -->
-            <h3 id="robotica">¿Qué es la robotica?</h3>
+            <h3 id="robotica">¿Qué es la robótica?</h3>
             <img src="images/robot1.png" width="500px" alt="">
             <p>
               
@@ -214,17 +218,20 @@
             <!-- <img src="images/figma.png" alt="Logo de Figma" title="Logo de Figma"> -->
             <h3 id="sensor">¿Qué es un sensor?</h3>
             <p>Un sensor es un dispositivo electrónico capaz de registrar cambios de un fenómeno físico o
-              químico cuantificable generando una señal eléctrica de acuerdo al estímulo recibido.</p>
+              químico cuantificable generando una señal eléctrica de acuerdo con el estímulo recibido.
+            </p>
             <!-- <img src="images/github.png" alt="Logo de GitHub" title="Logo de GitHub"> -->
             <h3 id="cerebro">¿Cuál es el cerebro en un robot?</h3>
             <img src="images/cerebro.jpg" width="400px" alt="">
             <p>El cerebro es donde se realizan todos los procesos y decisiones del robot que dependen de las
               lecturas de los sensores y que realizan las acciones en los actuadores del robot. El cerebro consta
-              de un microcontrolador el cuál tiene las mismas características de un equipo de cómputo, es
-              decir, se puede programar y consta de una memoria en la que se puede almacenar información.</p>
+              de un microcontrolador el cual tiene las mismas características de un equipo de cómputo, es
+              decir, se puede programar y consta de una memoria en la que se puede almacenar información.
+            </p>
             <h3 id="actuador">¿Qué es un actuador?</h3>
             <p>Un actuador es un dispositivo electromecánico que convierte una señal eléctrica en una
-              acción física, por ejemplo un motor al recibir un voltaje realiza la acción de girar.</p>
+              acción física, por ejemplo, un motor al recibir un voltaje realiza la acción de girar.
+            </p>
             <h3 id="programa">¿Qué es programa en computación?</h3>
             <p>Un programa es una secuencia de instrucciones que en conjunto realizan una o varias acciones
               o tareas. Las instrucciones del programa se escriben en un lenguaje de programación específico
@@ -234,11 +241,11 @@
           <hr>
           <section class="section-content">
 
-            <h2>Introducción a Arduino</h2>
+            <h2>Introducción Arduino</h2>
             <img src="images/arduino-logo.png" width="200px" alt="">
             <h3 id="arduino">¿Qué es Arduino y para qué sirve?</h3>
             <p>Arduino es una placa para el desarrollo de proyectos. Todos los recursos de software y diseños
-              empleados por Arduino son abiertos, es decir, se pueden obtener de manera gratuita además
+              empleados por Arduino son abiertos, es decir, se pueden obtener de manera gratuita, además
               de poder modificarse sin ninguna restricción. </p>
             <p>La placa Arduino debe de ser programada con las instrucciones que indiquen su funcionamiento. Para programar a la placa Arduino se puede emplear el IDE de Arduino además de
               lenguajes de programación como Java, Python, Matlab, entre otros. Uno de los usos de la placa
@@ -252,7 +259,7 @@
               traduce como entorno integrado de desarrollo. El IDE de Arduino es descargable de manera
               gratuita en la página https://www.arduino.cc/.</p>
             <h3 id="mensajes">Escritura de mensajes y anotaciones en el IDE de Arduino</h3>
-            <p>Para un mensajes de línea se escribe después de //, y para un mensaje de varias líneas se
+            <p>Para un mensaje de línea se escribe después de //, y para un mensaje de varias líneas se
               escribe entre /* y */</p>
               <pre>
 // Este es un comentario 
@@ -265,7 +272,7 @@ bloque */
             
             <h3 id="funcion">¿Qué es una función en Arduino?
             </h3>
-            <p>Una función es un conjunto de instrucciones que dependiendo de su definición, pueden
+            <p>Una función es un conjunto de instrucciones que, dependiendo de su definición, pueden
               devolver algún valor o requerir de algún valor al ejecutarse. Las funciones se definen para
               simplificar el código en procesos que se repetirán en varias ocasiones en el programa. Los
               cálculos realizados por una función se realizan de manera independiente al resto del programa.
@@ -281,7 +288,7 @@ tipoDevuelto nombreFunción(Argumento1, Argumento2, Argumento3, ...){
 }
   
               </pre>
-              <p>Por ejemplo si se define una función que realice la adición de dos números enteros deberá
+              <p>Por ejemplo, si se define una función que realice la adición de dos números enteros deberá
                 de devolver el valor de la suma realizada el cual es un número entero, por lo que, el tipo de la
                 variable devuelta en este ejemplo es un número entero cuyo tipo es int (abreviatura de integer).</p>
                 <pre>
@@ -292,9 +299,9 @@ int nombreFunción(Argumento1, Argumento2, Argumento3, ...){
 }
   
                 </pre>
-                <p>El nombre de una función debe de representar la actividad que realiza, por ejemplo en el
+                <p>El nombre de una función debe de representar la actividad que realiza, por ejemplo, en el
                   caso de la función que devuelve la solución de la adición de dos números enteros el nombre
-                  puede ser suma</p>
+                  puede ser suma.</p>
 <pre>
 int suma(Argumento1, Argumento2, Argumento3, ...){
   
@@ -367,7 +374,7 @@ int suma(int i, int j){
             <p>
               Para trabajar con números enteros se emplea int (entero), para trabajar con números decimales se emplea float (decimales), 
               para trabajar con letras o símbolos se emplea char (caracteres) y para trabajar con valores de verdadero o falso se emplea boolean.
-              Por ejemplo se declaran los varios tipos de variables en tres distintos lugares: fuera de las
+              Por ejemplo, se declaran los varios tipos de variables en tres distintos lugares: fuera de las
               funciones setup() y loop(), dentro del cuerpo de la función setup() y dentro del cuerpo de
               la función loop().
             </p>
@@ -848,13 +855,13 @@ void loop() {
               Puerto serial y más
             </h2>
             <h3 id="serial">Puerto serial</h3>
-            <p>El puerto serial en arduino, se refiere a un puerto que se utiliza para comunicar dos dispositivos digitales. Se usan dos pines, RX y TX. Por ejemplo dependiendo del tipo de tarjeta, puede haber 1 o mas puertos. Estos puertos consisten de dos pines llamados RX y Tx. Por lo general los datos a enviar estan codificados en caracteres.</p>
+            <p>El puerto serial en Arduino, se refiere a un puerto que se utiliza para comunicar dos dispositivos digitales. Se usan dos pines, RX y TX. Por ejemplo, dependiendo del tipo de tarjeta, puede haber 1 o más puertos. Estos puertos consisten en dos pines llamados RX y TX. Por lo general los datos a enviar están codificados en caracteres.</p>
 <pre>
   //Ejemplo
 
   int cont=0;
   void setup(){
-    //iniciamos el puerto serie
+    //Iniciamos el puerto serie
     Serial.begin(9600);
   }
   void loop(){
@@ -862,7 +869,7 @@ void loop() {
     Serial.print("Contador: ");
     Serial.println(cont);
     
-    //incrementamos el contador y esperamos un segundo
+    //Incrementamos el contador y esperamos un segundo
     cont++;
     delay(1000);
   }  
@@ -880,10 +887,38 @@ void loop() {
           <hr>
           <div class="section-content">
             <h2>
-              Subir codigo al robot EPCC
+              Como subir código al robot EPCC
             </h2>
             <!-- <img src="images/google-chrome.png" alt="Logo de Google Chrome" title="Logo de Google Chrome"> -->
-            <h3 id="codigo">Como subir codigo al robot EPCC</h3>
+            <h3 id="codigo">Paso 1</h3>
+            <p>Si aún no tienen descargado IDE de arduino.
+              veremos el siguiente video de YouTube:</p>
+            <a href="https://www.youtube.com/watch?v=245eHUVcRZs" target="_blank" >
+              Video para instalar el IDE Arduino.
+            </a>
+
+            <h3 id="paso2"> Paso 2</h3>
+            <p>Escribimos nuestro código en el IDE de Arduino.</p>
+            <img src="./images/arduino1.png" width="100%" alt="">
+
+            <h3 id="paso3"> Paso 3</h3>
+            <p> 
+              Hacemos clic en el botón de verificar para confirmar que nuestro código este correctamente.
+            </p>
+            <img src="./images/arduino3.png" width="100%" alt="">
+
+            <h3 id="paso4"> Paso 4</h3>
+            <p> 
+              Verificamos que nuestro robot EPCC esté conectado.
+            </p>
+            <img src="./images/arduino4.png" width="100%" alt="">
+            <h3 id="paso5"> Paso 5</h3>
+            <p> 
+              Procedemos a subir el código dándole clic al botón de subir  y esperamos que el código cargue en nuestro robot.
+            </p>
+            <img src="./images/arduino5.png" width="100%" alt="">
+
+
           </div>
           <div class="section-content">
             <h2>
@@ -920,7 +955,7 @@ void loop() {
           <section class="section-content">
 
             <h2>Robot EPCC</h2>
-            <img src="./images/robot-prototipo.png" alt="">
+            <img src="./images/epccrobot.jpeg" width="50%" alt="">
             <p>El robot EPCC es un prototipo funcional de robot multiconfigurable y programable. con el que vas a enseñar a tus estudiantes a desarrollar el pensamiento científico y creativo a través de la robótica.</p>
             <p>A continuacion veremos algunos proyectos que ponemos desarrollar en el robot EPCC:</p>
             <h3 id="proyecto1">Proyecto 1 (Led intermitente)</h3>
